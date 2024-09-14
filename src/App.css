@@ -1,0 +1,218 @@
+.background-gradient {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to top, #292929, #2b3618, #292929, #3e4e23);
+  background-size: 300% 300%;
+}
+
+/* Scrollbar Track */
+.scrollbar-style::-webkit-scrollbar {
+  width: 8px;
+  /* height: 8px; */
+}
+
+.scrollbar-style::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scrollbar Thumb */
+.scrollbar-style::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+.scrollbar-style:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(106, 106, 106, 0.8); /* Slightly darker on hover */
+}
+
+.slider {
+  transition: transform 0.3s ease;
+}
+
+/* Custom slider styles */
+.nav-container-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 8px;
+  border-radius: 9999px;
+}
+
+.nav-item-button {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 8px 16px 0px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slidertop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: calc(10.66%);
+  background-color: rgb(255, 255, 255);
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.slider-child {
+  position: relative;
+}
+
+.child1 {
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100%;
+  height: 6px;
+  background-color: #3e4e23;
+}
+
+.child2 {
+  position: absolute;
+  bottom: -6px;
+  right: -12.5px;
+  width: 0;
+  height: 0;
+  border-bottom: 11.5px solid transparent;
+  border-left: 18px solid #3e4e23;
+  background-color: transparent;
+}
+
+.child3 {
+  position: absolute;
+  bottom: -6px;
+  left: -12.5px;
+  width: 0;
+  height: 0;
+  border-bottom: 11.5px solid transparent;
+  border-right: 18px solid #3e4e23;
+  background-color: transparent;
+}
+.posterbox {
+  background-color: #878787;
+}
+.slider-btn-cat {
+  transition: left 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Smoother animation */
+}
+
+/* Active button color styles */
+.active {
+  color: black !important; /* Ensures the active button text is black */
+}
+
+.dropdown-content {
+    display: none;
+  }
+  /* Show dropdown content on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  /* From Uiverse.io by csemszepp */ 
+.custum-file-upload {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #b8b8b8;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px #e8e8e8;
+}
+
+.custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+  height: 80px;
+  fill: #000000;
+}
+
+.custum-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .text span {
+  font-weight: 400;
+  color: #000000;
+}
+
+.custum-file-upload input {
+  display: none;
+}
+/* From Uiverse.io by adamgiebl */ 
+.dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.dot-loader{
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #b3d4fc;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: #6793fb;
+    box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+  }
+
+  100% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+}
