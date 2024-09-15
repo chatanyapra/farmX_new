@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const UserConnect = () => {
   return (
-    <div className="container relative mx-auto p-6 bg-white rounded-lg shadow-md">
+    <div className="container relative mx-auto p-6 bg-black text-white rounded-lg shadow-md">
         <Link to={"/"} className="absolute top-1 left-1 hover:text-blue-700 border-solid border-2 border-red-950 hover:border-red-600 rounded-md p-1 flex font-bold cursor-pointer">
             <FaBackwardStep className="text-blue-500 text-xl my-0.5"/>
             Back
@@ -17,11 +17,11 @@ const UserConnect = () => {
             className="w-32 h-32 lg:w-40 lg:h-40 rounded-full object-cover"
           />
           <div className="mt-4 lg:mt-0 text-center lg:text-left">
-            <h1 className="text-2xl font-bold text-gray-800">Shreemati Sita Devi</h1>
+            <h1 className="text-2xl font-bold text-gray-400">Shreemati Sita Devi</h1>
             <p className="text-gray-500">Wheat Type</p>
-            <p className="mt-2 text-gray-600">Experience: 12 Years</p>
-            <p className="text-gray-600">Practices in: Wheat, Carrot, Ladyfinger</p>
-            <p className="text-gray-600">Satisfied Customers: 342</p>
+            <p className="mt-2 text-gray-500">Experience: 12 Years</p>
+            <p className="text-gray-500">Practices in: Wheat, Carrot, Ladyfinger</p>
+            <p className="text-gray-500">Satisfied Customers: 342</p>
             <div className="flex mt-2 justify-center lg:justify-start">
               <span className="text-yellow-500">★★★★★</span>
             </div>
@@ -41,7 +41,7 @@ const UserConnect = () => {
 
       {/* Photos Section */}
       <div className="mt-8">
-        <h2 className="text-lg font-bold text-gray-800">Photos</h2>
+        <h2 className="text-lg font-bold text-gray-400">Photos</h2>
         <div className="flex space-x-4 mt-4">
           <img
             src="https://picsum.photos/200"
@@ -82,7 +82,7 @@ const UserConnect = () => {
 
       {/* Social Media Links */}
       <div className="mt-8">
-        <h3 className="text-lg font-bold text-gray-800">Social Media Links</h3>
+        <h3 className="text-lg font-bold text-gray-500">Social Media Links</h3>
         <div className="flex space-x-4 mt-4">
           <FaSquareFacebook className="text-blue-500 hover:text-blue-700 text-2xl" />
           <FaSquareTwitter className="text-blue-400 hover:text-blue-600 text-2xl" />
@@ -92,7 +92,7 @@ const UserConnect = () => {
 
       {/* Reviews Section */}
       <div className="mt-8">
-        <h3 className="text-lg font-bold text-gray-800">Reviews</h3>
+        <h3 className="text-lg font-bold text-gray-500">Reviews</h3>
         <div className="bg-gray-50 p-4 rounded-lg shadow-md mt-4">
           <p className="text-gray-600 font-semibold">Ramu Kakaji</p>
           <p className="text-gray-500 mt-2">

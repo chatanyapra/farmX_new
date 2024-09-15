@@ -1,16 +1,14 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import farmer from '../assets/images/farmer.jpg'
-import wheat from '../assets/images/wheat.jpg'
 
-function Cropcard() {
+function Cropcard(props) {
   return (
 
-    <div className="relative flex justify-evenly bg-black rounded-2xl p-4 my-2 space-x-4 w-92 h-44 border border-solid text-white">
+    <div className="relative flex justify-evenly bg-black rounded-2xl p-4 my-2 space-x-4 h-44 border border-solid text-white" style={{width : "360px"}}>
       {/* Image and Crop Details */}
-      <div className="flex flex-col w-2/4 pb-1">
+      <div className="flex flex-col w-2/5 pb-1">
         <img
-          src={wheat}
+          src={props.crop}
           alt="Wheat"
           className="w-full h-24 object-cover rounded-2xl"
         />
@@ -22,7 +20,7 @@ function Cropcard() {
       <div className="w-3/6 flex">
         <div className="flex flex-col mr-2">
           <img
-            src={farmer}
+            src={props.farmerImg}
             alt="Farmer"
             className="w-7 h-7 object-cover rounded-full"
           />
@@ -34,7 +32,7 @@ function Cropcard() {
         <div className="flex flex-col">
           <span className="flex">
             <span className="text-lg font-semibold w-full truncate">
-              Dinesh Mishra
+              {props.name}
             </span>
           </span>
           <span className="w-full truncate text-xs py-2">

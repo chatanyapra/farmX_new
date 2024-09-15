@@ -8,7 +8,7 @@ function UserProfile() {
         <div className="flex md:flex-col justify-center mb-4 pt-10">
             <img className="w-48 h-48 rounded-full shadow-lg" src="//picsum.photos/1920/1080" alt="User Image"/>
             <div className="flex flex-col mt-5 ml-4 font-semibold text-center">
-                <h5>User Name</h5>
+                <h5>Rajeev Kumar</h5>
                 <h5 className="text-blue-500">+91 5455455455</h5>
             </div>
         </div>
